@@ -1,0 +1,9 @@
+{
+  "name": "com.sushiwaumai.chronity",
+  "version": "0.0.1",
+  "displayName": "Chronity",
+  "description": "Create and manage Unity Timers easily",
+  "unity": "2020.3",
+  "type": "library",
+  "dependencies": {}
+}
