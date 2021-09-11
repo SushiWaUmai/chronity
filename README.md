@@ -10,6 +10,13 @@ A library for running functions after a delay in Unity.
 
 This package is heavily inspired by the [UnityTimer](https://github.com/akbiggs/UnityTimer) made by [akbiggs](https://github.com/akbiggs).
 
+## Table of Contents
+- [Getting Started](https://github.com/SushiWaUmai/Chronity#getting-started)
+  - [Installation](https://github.com/SushiWaUmai/Chronity#installation)
+  - [Quick Start](https://github.com/SushiWaUmai/Chronity#quick-start)
+- [Features](https://github.com/SushiWaUmai/Chronity#features)
+- [License](https://github.com/SushiWaUmai/Chronity#license)
+
 ## Getting Started
 
 ### Installation
@@ -28,7 +35,7 @@ https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
 
 Timer.Register(5f, () => Debug.Log("Hello World"));
 ```
-### Features
+## Features
 
 **Make a timer repeat by setting `isLooped` to true.**
 ```c#
@@ -113,3 +120,8 @@ EditorTimer.Register(5, () => Debug.Log("Hello World"));
 - timer.TimeRemaining
 - timer.RatioComplete
 - timer.IsDone
+
+
+## License
+
+Code released under [the MIT License](https://github.com/SushiWaUmai/Chronity/blob/main/LICENSE).
