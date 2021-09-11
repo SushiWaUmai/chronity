@@ -1,8 +1,8 @@
 {
   "name": "com.sushiwaumai.chronity",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "displayName": "Chronity",
-  "description": "Create and manage Unity Timers easily",
+  "description": "Library for running functions in Unity after a delay.",
   "unity": "2020.3",
   "type": "library",
   "dependencies": {}

@@ -1,0 +1,29 @@
+{
+    "name": "ChroityEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:27619889b8ba8c24980f49ee34dbb44a",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:3b4989bb139b03645afae8a905b9f290"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "Unity",
+            "expression": "",
+            "define": ""
+        },
+        {
+            "name": "com.sushiwaumai.chronity",
+            "expression": "",
+            "define": ""
+        }
+    ],
+    "noEngineReferences": false
+}

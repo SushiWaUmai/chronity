@@ -5,21 +5,8 @@ using UnityEngine.SceneManagement;
 
 namespace Chronity
 {
-    public partial class Timer
+    public partial class Timer : TimerBase
     {
-        public static void PauseAllTimers() => TimerManager.PauseAllTimers();
-
-        public static void ResumeAllTimers() => TimerManager.ResumeAllTimers();
-
-        public static void CancelAllTimers() => TimerManager.CancelAllTimers();
-
-        public static Timer Register(float duration, Action onComplete, Action<float> onUpdate = null, bool useRealTime = false, bool loop = false, bool cancelOnSceneChange=true, MonoBehaviour attachedBehavior = null)
-        {
-            Timer result = new Timer(duration, onComplete, onUpdate, useRealTime, loop, cancelOnSceneChange, attachedBehavior);
-            TimerManager.RegisterTimer(result);
-            return result;
-        }
-
         private class TimerManager : MonoBehaviour
         {
             public static TimerManager Singleton

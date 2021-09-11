@@ -3,98 +3,62 @@ using UnityEngine;
 
 namespace Chronity
 {
-    public partial class Timer
+    public partial class Timer : TimerBase
     {
-        public void Pause() => IsPaused = true;
+        /// <summary>
+        /// Register a new timer that should fire an event after a certain amount of time
+        /// has elapsed.
+        ///
+        /// Registered timers are destroyed when the scene changes.
+        /// </summary>
+        /// <param name="duration">The time to wait before the timer should fire, in seconds.</param>
+        /// <param name="onComplete">An action to fire when the timer completes.</param>
+        /// <param name="onUpdate">An action that should fire each time the timer is updated. Takes the amount
+        /// of time passed in seconds since the start of the timer's current loop.</param>
+        /// <param name="loop">Whether the timer should repeat after executing.</param>
+        /// <param name="useRealTime">Whether the timer uses real-time(i.e. not affected by pauses,
+        /// slow/fast motion) or game-time(will be affected by pauses and slow/fast-motion).</param>
+        /// <param name="cancelOnSceneChange">Whether the timer should cancel when the scene changes</param>
+        /// <param name="attachedBehavior">An object to attach this timer to. After the object is destroyed,
+        /// the timer will expire and not execute. This allows you to avoid annoying <see cref="NullReferenceException"/>s
+        /// by preventing the timer from running and accessessing its parents' components
+        /// after the parent has been destroyed.</param>
+        /// <returns>A timer object that allows you to examine stats and stop/resume progress.</returns>
+        public static Timer Register(float duration, Action onComplete, Action<float> onUpdate = null, bool useRealTime = false, bool loop = false, bool cancelOnSceneChange = true, MonoBehaviour attachedBehavior = null)
+        {
+            Timer result = new Timer(duration, onComplete, onUpdate, useRealTime, loop, cancelOnSceneChange, attachedBehavior);
+            TimerManager.RegisterTimer(result);
+            return result;
+        }
 
-        public void Resume() => IsPaused = false;
+        public static void PauseAllTimers() => TimerManager.PauseAllTimers();
 
-        public void Cancel() => IsCanceled = true;
+        public static void ResumeAllTimers() => TimerManager.ResumeAllTimers();
 
-        public bool IsDone => IsCompleted || IsCanceled || AttachedBehaviorDestroyed;
+        public static void CancelAllTimers() => TimerManager.CancelAllTimers();
 
-        public bool IsCanceled { get; private set; }
-        public bool IsCompleted { get; private set; }
-
-        public float Duration { get; private set; }
         public bool UsesRealTime { get; private set; }
-        public bool IsLooped { get; private set; }
-        public bool IsPaused { get; private set; }
         public bool CancelOnSceneChange { get; private set; }
         public MonoBehaviour AttachedBehavior { get; private set; }
 
-        public float TimePassed => CurrentTime - _startTime;
-        public float TimeRemaining => _endTime - CurrentTime;
-        public float RatioComplete => TimePassed / Duration;
+        public override bool IsDone => base.IsDone || AttachedBehaviorDestroyed;
 
-        private Timer(float duration, Action onComplete, Action<float> onUpdate, bool usesRealTime = false, bool looped = false, bool cancelOnSceneChange = true, MonoBehaviour attachedBehavior = null)
+        protected Timer(float duration, Action onComplete, Action<float> onUpdate, bool usesRealTime = false, bool looped = false, bool cancelOnSceneChange = true, MonoBehaviour attachedBehavior = null)
+           : base(duration, onComplete, onUpdate, looped)
         {
-            Duration = duration;
-            _onComplete = onComplete;
-            _onUpdate = onUpdate;
-            UsesRealTime = usesRealTime;
-            IsLooped = looped;
             CancelOnSceneChange = cancelOnSceneChange;
+            UsesRealTime = usesRealTime;
 
             AttachedBehavior = attachedBehavior;
 
             if (attachedBehavior)
                 _hasAttachedBehavior = true;
 
-            _startTime = CurrentTime;
-            _lastTime = _startTime;
         }
 
-        private void Update()
-        {
-            if (IsDone)
-                return;
+        protected override float CurrentTime => UsesRealTime ? Time.realtimeSinceStartup : Time.time;
 
-            HandlePause();
-            CheckTime();
-            HandleUpdate();
-
-            _lastTime = CurrentTime;
-        }
-
-        private void HandlePause()
-        {
-            if (IsPaused)
-                _startTime += TimeDelta;
-        }
-
-        private void CheckTime()
-        {
-            if (_endTime < CurrentTime)
-            {
-                _onComplete?.Invoke();
-
-                if (IsLooped)
-                    _startTime = CurrentTime;
-                else
-                    IsCompleted = true;
-            }
-        }
-
-        private void HandleUpdate()
-        {
-            if(!IsPaused && !IsDone)
-            {
-                _onUpdate?.Invoke(TimePassed);
-            }
-        }
-
-        private float CurrentTime => UsesRealTime ? Time.realtimeSinceStartup : Time.time;
-        private float TimeDelta => CurrentTime - _lastTime;
-        private bool AttachedBehaviorDestroyed => _hasAttachedBehavior && AttachedBehavior == null;
-
-        private readonly Action _onComplete;
-        private readonly Action<float> _onUpdate;
         private readonly bool _hasAttachedBehavior;
-
-        private float _startTime;
-        private float _lastTime;
-
-        private float _endTime => _startTime + Duration;
+        private bool AttachedBehaviorDestroyed => _hasAttachedBehavior && AttachedBehavior == null;
     }
 }
