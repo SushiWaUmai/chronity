@@ -24,12 +24,12 @@ namespace Chronity
         public float TimeRemaining => _endTime - CurrentTime;
         public float RatioComplete => TimePassed / Duration;
 
-        protected TimerBase(float duration, Action onComplete, Action<float> onUpdate, bool looped = false)
+        protected TimerBase(float duration, Action onComplete, Action<float> onUpdate, bool isLooped = false)
         {
             Duration = duration;
             _onComplete = onComplete;
             _onUpdate = onUpdate;
-            IsLooped = looped;
+            IsLooped = isLooped;
 
             _startTime = CurrentTime;
             _lastTime = _startTime;

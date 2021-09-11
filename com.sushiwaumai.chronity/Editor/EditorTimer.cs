@@ -16,11 +16,11 @@ namespace Chronity.Editor
         /// <param name="onComplete">An action to fire when the timer completes.</param>
         /// <param name="onUpdate">An action that should fire each time the timer is updated. Takes the amount
         /// of time passed in seconds since the start of the timer's current loop.</param>
-        /// <param name="loop">Whether the timer should repeat after executing.</param>
+        /// <param name="isLooped">Whether the timer should repeat after executing.</param>
         /// <returns>A timer object that allows you to examine stats and stop/resume progress.</returns>
-        public static EditorTimer Register(float duration, Action onComplete, Action<float> onUpdate = null, bool loop = false)
+        public static EditorTimer Register(float duration, Action onComplete, Action<float> onUpdate = null, bool isLooped = false)
         {
-            EditorTimer result = new EditorTimer(duration, onComplete, onUpdate, loop);
+            EditorTimer result = new EditorTimer(duration, onComplete, onUpdate, isLooped);
             _timers.Add(result);
             return result;
         }
@@ -43,8 +43,8 @@ namespace Chronity.Editor
                 _timers[i].Cancel();
         }
 
-        private EditorTimer(float duration, Action onComplete, Action<float> onUpdate, bool looped = false)
-            : base(duration, onComplete, onUpdate, looped)
+        private EditorTimer(float duration, Action onComplete, Action<float> onUpdate, bool isLooped = false)
+            : base(duration, onComplete, onUpdate, isLooped)
         {
             EditorApplication.update += Update;
         }
