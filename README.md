@@ -11,7 +11,7 @@ Please follow the instructions in the manual about [Installing a package from a 
 
 
 Use the following URL to install the latest version of the package:
-https://github.com/SushiWaUmai/Chronity?path=/com.sushiwaumai.chronity
+https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
 
 
 ### Quick Start
