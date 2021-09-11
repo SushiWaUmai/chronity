@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.sushiwaumai.chronity": "file:C:/Users/eugen/Coding/csharp/Unity/Packages/Chronity",
+    "com.sushiwaumai.chronity": "https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity",
     "com.unity.2d.animation": "5.0.7",
     "com.unity.2d.pixel-perfect": "4.0.1",
     "com.unity.2d.psdimporter": "4.1.0",
