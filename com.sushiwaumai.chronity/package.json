@@ -2,7 +2,7 @@
   "name": "com.sushiwaumai.chronity",
   "version": "0.1.0",
   "displayName": "Chronity",
-  "description": "Library for running functions in Unity after a delay.",
+  "description": "Library for running functions after a delay by creating timers in Unity3D.",
   "unity": "2020.3",
   "type": "library",
   "dependencies": {}
