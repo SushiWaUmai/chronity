@@ -6,7 +6,7 @@
 [![Compatibility](https://img.shields.io/badge/-2020.3+-11191F?logo=Unity&style=flat-square)](https://unity3d.com/get-unity/download/archive)
 [![GitHub Repo stars](https://img.shields.io/github/stars/SushiWaUmai/Chronity?color=%23dca&label=%E2%AD%90&style=flat-square)](https://github.com/SushiWaUmai/Chronity/stargazers)
 
-A library for running functions after a delay in Unity.
+:hourglass: A library for running functions after a delay in Unity.
 
 This package is heavily inspired by the [UnityTimer](https://github.com/akbiggs/UnityTimer) made by [akbiggs](https://github.com/akbiggs).
 
@@ -17,7 +17,7 @@ This package is heavily inspired by the [UnityTimer](https://github.com/akbiggs/
 - [Features](https://github.com/SushiWaUmai/Chronity#features)
 - [License](https://github.com/SushiWaUmai/Chronity#license)
 
-## Getting Started
+## Getting Started :rocket:
 
 ### Installation
 Please follow the instructions in the manual about [Installing a package from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html). 
@@ -27,7 +27,7 @@ Use the following URL to install the latest version of the package:
 https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
 
 
-### Quick Start
+### Quick Start :mortar_board:
 **This is how to call a function after a delay in Chronity.**
 
 ```c#
@@ -35,7 +35,8 @@ https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
 
 Timer.Register(5f, () => Debug.Log("Hello World"));
 ```
-## Features
+
+## Features :sparkles:
 
 **Make a timer repeat by setting `isLooped` to true.**
 ```c#
@@ -114,7 +115,7 @@ EditorTimer.Register(5, () => Debug.Log("Hello World"));
 
 **A number of other useful features are included!**
 
-- timer.Pause()
+- time.Pause()
 - timer.Resume()
 - timer.TimePassed
 - timer.TimeRemaining
@@ -122,6 +123,6 @@ EditorTimer.Register(5, () => Debug.Log("Hello World"));
 - timer.IsDone
 
 
-## License
+## License :scroll:
 
 Code released under [the MIT License](https://github.com/SushiWaUmai/Chronity/blob/main/LICENSE).
