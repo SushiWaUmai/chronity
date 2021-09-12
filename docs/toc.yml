@@ -1,6 +1,6 @@
 - name: Manual
   href: manual/ 
-  homepage: manual/index.md
-- name: Api Reference 
+  homepage: manual/getting-started.md
+- name: API Reference 
   href: api/
   homepage: api/index.md

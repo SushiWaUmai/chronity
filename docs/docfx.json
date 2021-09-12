@@ -10,7 +10,7 @@
       "dest": "api",
       "filter": "filterConfig.yml",
       "disableGitFeatures": false,
-      "disableDefaultFilter": false
+      "disableDefaultFilter": true 
     }
   ],
   "build": {
@@ -34,10 +34,9 @@
       }
     ],
     "dest": "_site",
-
     "globalMetadata": {
-      "_appTitle": "Example Unity documentation",
-      "_appFooter": "Example Unity documentation",
+      "_appTitle": "Chronity",
+      "_appFooter": "Chronity",
       "_enableSearch": true
     },
     "sitemap": {
@@ -45,7 +44,10 @@
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": ["default"],
+    "template": [
+      "default",
+      "templates/chronity/"
+    ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,

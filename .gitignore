@@ -73,3 +73,5 @@ crashlytics-build.properties
 # TextMesh Pro files
 [Aa]ssets/TextMesh*Pro/
 
+# Exported templates from docfx
+_exported_templates/

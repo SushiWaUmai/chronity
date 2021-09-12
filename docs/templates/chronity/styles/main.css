@@ -1,0 +1,19 @@
+.hero {
+    height: 350px;
+    margin-top: 50px;
+    padding-top: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero {
+    color: #C1D38B;
+    background-color: #385361;
+    background-image: -webkit-gradient(linear,left bottom,right top,color-stop(0%,#000),color-stop(100%,#385361));
+    background-image: -webkit-linear-gradient(45deg,#000 0,#385361 100%);
+    background-image: -moz-linear-gradient(45deg,#000 0,#385361 100%);
+    background-image: -ms-linear-gradient(45deg,#000 0,#385361 100%);
+    background-image: -o-linear-gradient(45deg,#000 0,#385361 100%);
+    background-image: linear-gradient(45deg,#000 0,#385361 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000', endColorstr='#385361', GradientType=1);
+}

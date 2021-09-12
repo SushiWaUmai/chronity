@@ -1,8 +1,16 @@
 - name: Getting Started 
-  href: index.md
+  href: getting-started.md
   items:
-    - name: Quick Start
     - name: Installation
       items:
         - name: Install with git
         - name: Install with OpenUPM
+    - name: Quick Start
+- name: Features
+  href: features.md
+  items:
+    - name: isLooped
+    - name: Cancel()
+    - name: RegisterTimer()
+    - name: onUpdate
+    - name: EditorTimer
