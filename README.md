@@ -10,11 +10,11 @@
 This package is heavily inspired by the [UnityTimer](https://github.com/akbiggs/UnityTimer) made by [akbiggs](https://github.com/akbiggs).
 
 ## Table of Contents
-- [Getting Started](https://github.com/SushiWaUmai/Chronity#getting-started)
+- [Getting Started](https://github.com/SushiWaUmai/Chronity#getting-started-rocket)
   - [Installation](https://github.com/SushiWaUmai/Chronity#installation)
-  - [Quick Start](https://github.com/SushiWaUmai/Chronity#quick-start)
-- [Features](https://github.com/SushiWaUmai/Chronity#features)
-- [License](https://github.com/SushiWaUmai/Chronity#license)
+  - [Quick Start](https://github.com/SushiWaUmai/Chronity#quick-start-mortar_board)
+- [Features](https://github.com/SushiWaUmai/Chronity#features-sparkles)
+- [License](https://github.com/SushiWaUmai/Chronity#license-scroll)
 
 ## Getting Started :rocket:
 
