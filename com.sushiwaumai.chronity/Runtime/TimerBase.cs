@@ -3,26 +3,77 @@ using UnityEngine;
 
 namespace Chronity
 {
+    /// <summary>
+    /// Base of the Timer Class,
+    /// it allows you to run events on a delay without the use of <see cref="Coroutine"/>
+    /// or <see cref="MonoBehaviour"/>
+    /// </summary>
     public abstract class TimerBase
     {
+        /// <summary>
+        /// Pause a running timer. A paused timer can be resumed from the same point it was paused.
+        /// </summary>
         public void Pause() => IsPaused = true;
 
+        /// <summary>
+        /// Continue a paused timer. Does nothing if the timer has not been paused.
+        /// </summary>
         public void Resume() => IsPaused = false;
 
+        /// <summary>
+        /// Cancels the timer. The timer's onComplete callback will not be called.
+        /// </summary>
         public void Cancel() => IsCanceled = true;
 
+        /// <summary>
+        /// Whether the timer has finished for any reason.
+        /// </summary>
         public virtual bool IsDone => IsCompleted || IsCanceled;
 
+        /// <summary>
+        /// Whether the timer has canceled running.
+        /// </summary>
         public bool IsCanceled { get; private set; }
+
+        /// <summary>
+        /// Whether the timer has completed running. This is false when timer was canceled.
+        /// </summary>
         public bool IsCompleted { get; private set; }
 
+        /// <summary>
+        /// How long it takes to complete from start of finish.
+        /// </summary>
         public float Duration { get; private set; }
+
+        /// <summary>
+        /// Whether the timer will run again upon completion.
+        /// </summary>
         public bool IsLooped { get; private set; }
+
+        /// <summary>
+        /// Whether the timer is paused
+        /// </summary>
         public bool IsPaused { get; private set; }
 
-        public float TimePassed => CurrentTime - _startTime;
+        /// <summary>
+        /// How many seconds have elapsed since the start of the timer.
+        /// </summary>
+        public float TimeElapsed => CurrentTime - _startTime;
+
+        /// <summary>
+        /// How many seconds there are left until completion.
+        /// </summary>
         public float TimeRemaining => _endTime - CurrentTime;
-        public float RatioComplete => TimePassed / Duration;
+
+        /// <summary>
+        /// How much progress the timer made from start to finish as a ratio
+        /// </summary>
+        public float RatioComplete => TimeElapsed / Duration;
+
+        /// <summary>
+        /// How much progress the timer has left as a ratio
+        /// </summary>
+        public float RatioRemaining => TimeRemaining / Duration;
 
         protected TimerBase(float duration, Action onComplete, Action<float> onUpdate, bool isLooped = false)
         {
@@ -70,7 +121,7 @@ namespace Chronity
         {
             if (!IsPaused && !IsDone)
             {
-                _onUpdate?.Invoke(TimePassed);
+                _onUpdate?.Invoke(TimeElapsed);
             }
         }
 

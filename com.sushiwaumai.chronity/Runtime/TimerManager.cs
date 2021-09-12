@@ -7,6 +7,9 @@ namespace Chronity
 {
     public partial class Timer : TimerBase
     {
+        /// <summary>
+        /// internal class to handle timers during runtime
+        /// </summary>
         private class TimerManager : MonoBehaviour
         {
             public static TimerManager Singleton

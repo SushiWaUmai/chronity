@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Chronity
 {
+    /// <summary>
+    /// Contains extension methods related to <see cref="Timer"/>
+    /// </summary>
     public static class TimerExtension
     {
         /// <summary>

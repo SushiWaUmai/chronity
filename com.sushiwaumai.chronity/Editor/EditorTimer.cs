@@ -2,8 +2,13 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Chronity.Editor
+namespace Chronity
 {
+    /// <summary>
+    /// Allows you to run events <b>in the editor</b> on a delay.
+    ///
+    /// To create and start a Timer, use the <see cref="Register"/> method.
+    /// </summary>
     public class EditorTimer : TimerBase
     {
         /// <summary>
@@ -25,18 +30,27 @@ namespace Chronity.Editor
             return result;
         }
 
+        /// <summary>
+        /// Pauses all created timers.
+        /// </summary>
         public static void PauseAllTimers()
         {
             for (int i = 0; i < _timers.Count; i++)
                 _timers[i].Pause();
         }
 
+        /// <summary>
+        /// Resumes all created timers.
+        /// </summary>
         public static void ResumeAllTimers()
         {
             for (int i = 0; i < _timers.Count; i++)
                 _timers[i].Resume();
         }
 
+        /// <summary>
+        /// Cancels all created timers.
+        /// </summary>
         public static void CancelAllTimers()
         {
             for (int i = 0; i < _timers.Count; i++)

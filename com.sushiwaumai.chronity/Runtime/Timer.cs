@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace Chronity
 {
+    /// <summary>
+    /// Allows you to run events <b>during runtime</b> on a delay without the use of <see cref="Coroutine"/>
+    /// or <see cref="MonoBehaviour"/>.
+    ///
+    /// To create and start a Timer, use the <see cref="Register"/> method.
+    /// </summary>
     public partial class Timer : TimerBase
     {
         /// <summary>
@@ -31,14 +37,35 @@ namespace Chronity
             return result;
         }
 
+        /// <summary>
+        /// Pauses all created timers.
+        /// </summary>
         public static void PauseAllTimers() => TimerManager.PauseAllTimers();
 
+        /// <summary>
+        /// Resumes all created timers.
+        /// </summary>
         public static void ResumeAllTimers() => TimerManager.ResumeAllTimers();
 
+        /// <summary>
+        /// Cancels all created timers.
+        /// </summary>
         public static void CancelAllTimers() => TimerManager.CancelAllTimers();
 
+        /// <summary>
+        /// Whether the timer uses real-time or game-time. Real time is unaffected by changes to <see cref="Time.timeScale"/>
+        /// of the game (e.g. pausing, slow-mo), while game time is affected.
+        /// </summary>
         public bool UsesRealTime { get; private set; }
+
+        /// <summary>
+        /// Whether the timer should be destroyed when scene changes.
+        /// </summary>
         public bool CancelOnSceneChange { get; private set; }
+
+        /// <summary>
+        /// The <see cref="MonoBehaviour"/> the timer is attached to.
+        /// </summary>
         public MonoBehaviour AttachedBehavior { get; private set; }
 
         public override bool IsDone => base.IsDone || AttachedBehaviorDestroyed;
