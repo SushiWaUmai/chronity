@@ -57,7 +57,7 @@ private void Update()
 {
     if (Input.GetKeyDown(KeyCode.X)) 
     {
-        Timer.Cancel(timer);
+        timer.Cancel();
     }
 }
 ```
