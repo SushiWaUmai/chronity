@@ -1,0 +1,6 @@
+- name: Manual
+  href: manual/ 
+  homepage: manual/index.md
+- name: Api Reference 
+  href: api/
+  homepage: api/index.md

@@ -1,0 +1,7 @@
+apiRules:
+- include:
+    uidRegex: Chronity 
+    type: Namespace
+- exclude:
+    uidRegex: .* 
+    type: Namespace
