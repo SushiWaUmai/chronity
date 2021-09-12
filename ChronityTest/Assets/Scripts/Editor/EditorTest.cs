@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using Chronity.Editor;
+using Chronity;
 
 public class EditorTest : EditorWindow
 {
@@ -31,6 +31,10 @@ public class EditorTest : EditorWindow
         if(GUILayout.Button("Resume"))
         {
             timer.Resume();
+        }
+        if(GUILayout.Button("Cancel All"))
+        {
+            EditorTimer.CancelAllTimers();
         }
     }
 }
