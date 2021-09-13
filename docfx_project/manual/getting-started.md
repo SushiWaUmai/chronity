@@ -16,6 +16,8 @@ https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
 
 ### Install with OpenUPM
 
+This needs [OpenUPM](https://openupm.com/) to be installed to your machine.
+
 Chronity can also be installed using OpenUPM.
 
 Run the following command on the project root folder:
