@@ -47,6 +47,6 @@
   "manual/getting-started.html": {
     "href": "manual/getting-started.html",
     "title": "Getting Started | Chronity",
-    "keywords": "Getting Started 🚀 Installation Install with Git Please follow the instructions in the manual about Installing a package from a Git URL . Use the following URL to install the latest version of the package: https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity Install with OpenUPM Chronity can also be installed using OpenUPM. Run the following command on the project root folder: openupm add com.sushiwaumai.chronity Quick Start 🎓 This is how to call a function after a delay in Chronity. // Log \"Hello World\" after five seconds. Timer.Register(5f, () => Debug.Log(\"Hello World\"));"
+    "keywords": "Getting Started 🚀 Installation Install with Git Please follow the instructions in the manual about Installing a package from a Git URL . Use the following URL to install the latest version of the package: https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity Install with OpenUPM This needs OpenUPM to be installed to your machine. Chronity can also be installed using OpenUPM. Run the following command on the project root folder: openupm add com.sushiwaumai.chronity Quick Start 🎓 This is how to call a function after a delay in Chronity. // Log \"Hello World\" after five seconds. Timer.Register(5f, () => Debug.Log(\"Hello World\"));"
   }
 }

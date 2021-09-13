@@ -112,15 +112,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "index",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "plT1fhAErb4TtmAjCn+vBo5T5bjnp999KArYmchgtlE="
+          "hash": "4gS0vS6u/l2K9rOqxtSN/4HsZ+v4IERtnpZomwjCLz8="
         }
       },
       "is_incremental": false,
@@ -144,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting-started.html",
-          "hash": "ER926zPJNClkygy2bmzUausbKeLxbvuIJhuq41p7CXc="
+          "hash": "tlPWUpzl833H+u+MMzt2a0XK7t0XEgVR2TXoWHbUNuM="
         }
       },
       "is_incremental": false,
@@ -178,25 +175,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because config changed.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ConfigChanged"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 0
+          "skipped_file_count": 4
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 6,
-          "skipped_file_count": 0
+          "skipped_file_count": 6
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
