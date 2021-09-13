@@ -1,0 +1,227 @@
+{
+  "sitemap": {
+    "baseUrl": "https://sushiwaumai.github.io/chronity/"
+  },
+  "homepages": [],
+  "source_base_path": "C:/Users/eugen/Coding/csharp/Unity/Packages/Chronity/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.EditorTimer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.EditorTimer.html",
+          "hash": "2rvgyEZUxffc4XA6Gc2ddErn/xY3P6BjRadBWLNjAYo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.Timer.TimerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.Timer.TimerManager.html",
+          "hash": "IgHcQ9mfoPVimAfkx6yXKHs+JayWvco+/mUWTutjF64="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.Timer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.Timer.html",
+          "hash": "HVbcSCJdpXn10kfucCzyu0xO0NMJ/oGQXVQ5+4z8Jos="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.TimerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.TimerBase.html",
+          "hash": "6r47yJ8krh4pe7T/+cALV2CGFz7zDdQyDsig/sJ5PWk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.TimerExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.TimerExtension.html",
+          "hash": "oCuty1UStwBWg/PUoTNkfl9FkEx8phQblgA2dEvFzmk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Chronity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Chronity.html",
+          "hash": "lORAxpQNkn1TxFBmIQt37eOz0NeCMTtDJCDh3Y6OAKg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "FdRWEUE4kwc/sxXU1ZLJmeRadyjTug/ukVgpouofrKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "qTF0Ktg3Xq4K8ZZVFol9sOqHeyHvTHDj9awMWr7nwpY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "index",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "plT1fhAErb4TtmAjCn+vBo5T5bjnp999KArYmchgtlE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/features.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/features.html",
+          "hash": "D/8yhhqHF81XUxESjBV3YxlHoYVLArv1jZrRk7kSyX4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/getting-started.html",
+          "hash": "ER926zPJNClkygy2bmzUausbKeLxbvuIJhuq41p7CXc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "A9tX9Aa/I1h3Do0nYV4rwH4Iys6FSd9H2bHTns6Ul8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "JhvipzM9tpBX5MBNAfLtxP2IEGli6G+A8bSZOdqbckg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because config changed.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ConfigChanged"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

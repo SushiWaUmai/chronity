@@ -33,7 +33,7 @@
         "exclude": ["obj/**", "_site/**"]
       }
     ],
-    "dest": "_site",
+    "dest": "../docs",
     "globalMetadata": {
       "_appTitle": "Chronity",
       "_appFooter": "Chronity",
