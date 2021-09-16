@@ -1,6 +1,7 @@
 # Chronity
 
 [![Release](https://img.shields.io/github/v/release/SushiWaUmai/Chronity?include_prereleases&style=flat-square)](https://github.com/SushiWaUmai/Chronity/releases)
+[![OpenUPM](https://img.shields.io/npm/v/com.sushiwaumai.chronity?label=openupm&registry_uri=https://package.openupm.com&style=flat-square)](https://openupm.com/packages/com.sushiwaumai.chronity/)
 [![LISENCE](https://img.shields.io/github/license/SushiWaUmai/Chronity?style=flat-square)](https://github.com/SushiWaUmai/Chronity/blob/main/LICENSE)
 [![Compatibility](https://img.shields.io/badge/-2020.3+-11191F?logo=Unity&style=flat-square)](https://unity3d.com/get-unity/download/archive)
 [![GitHub Repo stars](https://img.shields.io/github/stars/SushiWaUmai/Chronity?color=%23dca&label=%E2%AD%90&style=flat-square)](https://github.com/SushiWaUmai/Chronity/stargazers)
