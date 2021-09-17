@@ -1,26 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sushiwaumai.github.io/chronity/api/Chronity.EditorTimer.html</loc>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/chronity/api/Chronity.Timer.TimerManager.html</loc>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/chronity/api/Chronity.Timer.html</loc>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/chronity/api/Chronity.TimerBase.html</loc>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/chronity/api/Chronity.TimerExtension.html</loc>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sushiwaumai.github.io/chronity/api/Chronity.html</loc>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://sushiwaumai.github.io/chronity/api/index.html</loc>
-    <lastmod>2021-09-17T04:52:49+02:00</lastmod>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://sushiwaumai.github.io/chronity/index.html</loc>
-    <lastmod>2021-09-17T04:52:49+02:00</lastmod>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://sushiwaumai.github.io/chronity/manual/features.html</loc>
-    <lastmod>2021-09-17T04:52:49+02:00</lastmod>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://sushiwaumai.github.io/chronity/manual/getting-started.html</loc>
-    <lastmod>2021-09-17T04:52:49+02:00</lastmod>
+    <lastmod>2021-09-17T05:06:24+02:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
