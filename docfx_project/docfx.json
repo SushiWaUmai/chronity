@@ -37,7 +37,7 @@
     "globalMetadata": {
       "_appTitle": "Chronity",
       "_appFooter": "Chronity",
-      "_enableSearch": true
+      "_enableSearch": true,
     },
     "sitemap": {
       "baseUrl": "https://sushiwaumai.github.io/chronity"
