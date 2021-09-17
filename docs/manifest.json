@@ -3,7 +3,7 @@
     "baseUrl": "https://sushiwaumai.github.io/chronity/"
   },
   "homepages": [],
-  "source_base_path": "C:/Users/eugen/Coding/csharp/Unity/Packages/Chronity/docfx_project",
+  "source_base_path": "F:/Coding/csharp/Unity/Packages/Chronity/docfx_project",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -16,96 +16,12 @@
       "is_incremental": false
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Chronity.EditorTimer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Chronity.EditorTimer.html",
-          "hash": "2rvgyEZUxffc4XA6Gc2ddErn/xY3P6BjRadBWLNjAYo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Chronity.Timer.TimerManager.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Chronity.Timer.TimerManager.html",
-          "hash": "IgHcQ9mfoPVimAfkx6yXKHs+JayWvco+/mUWTutjF64="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Chronity.Timer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Chronity.Timer.html",
-          "hash": "HVbcSCJdpXn10kfucCzyu0xO0NMJ/oGQXVQ5+4z8Jos="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Chronity.TimerBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Chronity.TimerBase.html",
-          "hash": "6r47yJ8krh4pe7T/+cALV2CGFz7zDdQyDsig/sJ5PWk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Chronity.TimerExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Chronity.TimerExtension.html",
-          "hash": "oCuty1UStwBWg/PUoTNkfl9FkEx8phQblgA2dEvFzmk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Chronity.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Chronity.html",
-          "hash": "lORAxpQNkn1TxFBmIQt37eOz0NeCMTtDJCDh3Y6OAKg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "FdRWEUE4kwc/sxXU1ZLJmeRadyjTug/ukVgpouofrKI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "qTF0Ktg3Xq4K8ZZVFol9sOqHeyHvTHDj9awMWr7nwpY="
+          "hash": "47hPqUb79KQqiQj0VwBhHh4uLXE7EoVhSYWBhE1Mm0o="
         }
       },
       "is_incremental": false,
@@ -117,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "4gS0vS6u/l2K9rOqxtSN/4HsZ+v4IERtnpZomwjCLz8="
+          "hash": "gEw7CWG8yLcHXLRbYLgjR23t/fQnFlaiLWb6QM7c9W0="
         }
       },
       "is_incremental": false,
@@ -165,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "JhvipzM9tpBX5MBNAfLtxP2IEGli6G+A8bSZOdqbckg="
+          "hash": "pFbXWxFosRBCPGRysUUSDk1pCIZsMjJyUwaiwpdykqQ="
         }
       },
       "is_incremental": false,
@@ -175,23 +91,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 4
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 6,
-          "skipped_file_count": 6
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
