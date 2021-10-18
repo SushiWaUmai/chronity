@@ -3,14 +3,13 @@
     {
       "src": [
         {
-          "files": ["**/Chronity.csproj"],
-          "src": "../"
+          "files": ["**/*.cs"],
+          "src": "../com.sushiwaumai.chronity"
         }
       ],
       "dest": "api",
-      "filter": "filterConfig.yml",
       "disableGitFeatures": false,
-      "disableDefaultFilter": true 
+      "disableDefaultFilter": true
     }
   ],
   "build": {
@@ -37,17 +36,14 @@
     "globalMetadata": {
       "_appTitle": "Chronity",
       "_appFooter": "Chronity",
-      "_enableSearch": true,
+      "_enableSearch": true
     },
     "sitemap": {
-      "baseUrl": "https://sushiwaumai.github.io/chronity"
+      "baseUrl": "https://sushiwaumai.github.io/Chronity/"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [
-      "default",
-      "templates/chronity/"
-    ],
+    "template": ["default", "templates/chronity/"],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
