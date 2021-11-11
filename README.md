@@ -8,7 +8,7 @@
 
 :hourglass: A library for running functions after a delay in Unity.
 
-This package is heavily inspired by the [UnityTimer](https://github.com/akbiggs/UnityTimer) made by [akbiggs](https://github.com/akbiggs).
+This package is a fork of the [UnityTimer](https://github.com/akbiggs/UnityTimer) made by [akbiggs](https://github.com/akbiggs).
 
 ## Table of Contents
 - [Getting Started](https://github.com/SushiWaUmai/Chronity#getting-started-rocket)
