@@ -41,7 +41,7 @@ public class CoolMonoBehaviour : MonoBehaviour
     {
         // Use the AttachTimer extension method to create a timer that is destroyed when this
         // object is destroyed.
-        this.RegisterTimer(5f, () => {
+        this.AttachTimer(5f, () => {
       
             // If this code runs after the object is destroyed, a null reference will be thrown,
             // which could corrupt game state.
@@ -70,6 +70,16 @@ float transitionDuration = 5f;
 Timer.Register(transitionDuration,
    onUpdate: secondsElapsed => color.r = 255 * (secondsElapsed / transitionDuration),
    onComplete: () => Debug.Log("Color is now red"));
+```
+
+**Make a timer presist through scene changes using the `cancelOnSceneChange` parameter.**
+```c#
+// Make a timer that will persist through scene changes.
+Timer.Register(5f, () => Debug.Log("Hello World"), cancelOnSceneChange: false);
+
+// Change scene from another script 
+
+// Logs "Hello World" after 5 seconds.
 ```
 
 **Make a timer run in the editor by using the `EditorTimer` class.**

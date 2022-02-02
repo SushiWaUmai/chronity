@@ -7,7 +7,7 @@ public class ChronityTest : MonoBehaviour
 
     public void StartTimer()
     {
-        timer = this.RegisterTimer(5, () => Debug.Log("Hello World"), x => Debug.Log($"Timer Updated: {x}"));
+        timer = this.AttachTimer(5, () => Debug.Log("Hello World"), x => Debug.Log($"Timer Updated: {x}"));
     }
 
     public void PauseTimer()

@@ -22,7 +22,7 @@ namespace Chronity
         /// <param name="isLooped">Whether the timer should restart after executing.</param>
         /// <param name="cancelOnSceneChange">Whether the timer should cancel when the scene changes</param>
         /// <returns>A timer object that allows you to examine stats and stop/resume progress.</returns>
-        public static Timer RegisterTimer(this MonoBehaviour behaviour, float duration, Action onComplete, Action<float> onUpdate = null, bool useRealTime = false, bool isLooped = false, bool cancelOnSceneChange = true)
+        public static Timer AttachTimer(this MonoBehaviour behaviour, float duration, Action onComplete, Action<float> onUpdate = null, bool useRealTime = false, bool isLooped = false, bool cancelOnSceneChange = true)
         {
             Timer result = Timer.Register(duration, onComplete, onUpdate, useRealTime, isLooped, cancelOnSceneChange, behaviour);
             return result;
