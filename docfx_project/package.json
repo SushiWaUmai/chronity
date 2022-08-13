@@ -1,0 +1,15 @@
+{
+  "name": "chronity-docfx",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "npm run tailwind && npm run build",
+    "tailwind": "tailwind -i global.css -o ./templates/chronity/styles/global.css",
+    "serve": "docfx --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
