@@ -8,9 +8,7 @@
         }
       ],
       "dest": "api",
-      "filter": "filterConfig.yml",
-      "disableGitFeatures": false,
-      "disableDefaultFilter": true
+      "filter": "./filterConfig.yml"
     }
   ],
   "build": {
