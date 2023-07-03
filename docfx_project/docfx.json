@@ -18,8 +18,11 @@
         "files": ["api/**.yml", "api/index.md"]
       },
       {
-        "files": ["manual/**.md", "manual/**/toc.yml", "toc.yml", "*.md"]
-      }
+        "files": ["manual/**.md", "manual/**/toc.yml"]
+      }, 
+			{
+				"files": ["index.md", "toc.yml"]
+			}
     ],
     "resource": [
       {
@@ -36,14 +39,15 @@
     "globalMetadata": {
       "_appTitle": "Chronity",
       "_appFooter": "Chronity",
-      "_enableSearch": true
-    },
-    "sitemap": {
-      "baseUrl": "https://sushiwaumai.github.io/Chronity/"
+      "_enableSearch": true,
+      "_appLogoPath": "images/logo.svg"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": ["default", "templates/chronity/"],
+    "template": [
+      "default",
+      "modern"
+    ],
     "postProcessors": [],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,
