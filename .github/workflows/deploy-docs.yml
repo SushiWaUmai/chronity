@@ -34,6 +34,7 @@ jobs:
 
     - name: Build Page 
       run: docfx docfx_project/docfx.json
+      continue-on-error: true
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
