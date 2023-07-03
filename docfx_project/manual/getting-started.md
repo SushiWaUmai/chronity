@@ -4,9 +4,7 @@ title: Getting Started
 
 # Getting Started :rocket: 
 
-## Installation
-
-### Install with Git
+## Install with Git
 
 Please follow the instructions in the manual about [Installing a package from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html). 
 
@@ -14,7 +12,7 @@ Please follow the instructions in the manual about [Installing a package from a 
 Use the following URL to install the latest version of the package:
 https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
 
-### Install with OpenUPM
+## Install with OpenUPM
 
 This needs [OpenUPM](https://openupm.com/) to be installed to your machine.
 
