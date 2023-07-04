@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ff307072140d20ee06dcd14390e593e08e395772"
+      "hash": "13919f797e817691e5cc79704fd5702552f32d25"
     },
     "com.unity.2d.animation": {
       "version": "9.0.3",
@@ -128,13 +128,11 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.ide.visualstudio": {
-      "version": "2.0.18",
+    "com.unity.ide.vscode": {
+      "version": "1.2.5",
       "depth": 0,
       "source": "registry",
-      "dependencies": {
-        "com.unity.test-framework": "1.1.9"
-      },
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
@@ -165,7 +163,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.timeline": {
-      "version": "1.7.4",
+      "version": "1.7.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
