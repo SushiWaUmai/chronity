@@ -1,11 +1,10 @@
 {
   "dependencies": {
     "com.sushiwaumai.chronity": {
-      "version": "https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity",
+      "version": "file:/home/eugene/coding/hobby/cs/projects/chronity/com.sushiwaumai.chronity",
       "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "13919f797e817691e5cc79704fd5702552f32d25"
+      "source": "local",
+      "dependencies": {}
     },
     "com.unity.2d.animation": {
       "version": "9.0.3",

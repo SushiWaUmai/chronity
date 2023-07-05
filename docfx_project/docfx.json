@@ -8,7 +8,9 @@
         }
       ],
       "dest": "api",
-      "filter": "./filterConfig.yml"
+      "filter": "./filterConfig.yml",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": true 
     }
   ],
   "build": {
@@ -40,6 +42,9 @@
       "_appFooter": "Chronity",
       "_enableSearch": true,
       "_appLogoPath": "images/logo.svg"
+    },
+    "sitemap": {
+      "baseUrl": "https://sushiwaumai.github.io/chronity"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],

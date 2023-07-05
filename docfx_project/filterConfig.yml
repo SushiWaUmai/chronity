@@ -1,7 +1,7 @@
 apiRules:
 - include:
-    uidRegex: ^Chronity 
+    uidRegex: Chronity 
     type: Namespace
 - exclude:
-    uidRegex: ^UnityEngine 
+    uidRegex: .*
     type: Namespace
