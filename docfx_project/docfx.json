@@ -57,6 +57,7 @@
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": false,
+		"xref": ["https://normanderwan.github.io/UnityXrefMaps/2022.3/xrefmap.yml"]
 	}
 }
