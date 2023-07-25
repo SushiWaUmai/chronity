@@ -1,23 +1,23 @@
-[![# Chronity](./.github/images/Slide.png)](https://sushiwaumai.github.io/Chronity)
+[![chronity](./.github/images/Slide.png)](https://sushiwaumai.github.io/Chronity)
 
-[![Release](https://img.shields.io/github/v/release/SushiWaUmai/Chronity?include_prereleases&style=flat-square)](https://github.com/SushiWaUmai/Chronity/releases)
+[![Release](https://img.shields.io/github/v/release/SushiWaUmai/chronity?include_prereleases&style=flat-square)](https://github.com/SushiWaUmai/Chronity/releases)
 [![OpenUPM](https://img.shields.io/npm/v/com.sushiwaumai.chronity?label=openupm&registry_uri=https://package.openupm.com&style=flat-square)](https://openupm.com/packages/com.sushiwaumai.chronity/)
-[![LISENCE](https://img.shields.io/github/license/SushiWaUmai/Chronity?style=flat-square)](https://github.com/SushiWaUmai/Chronity/blob/main/LICENSE)
+[![LISENCE](https://img.shields.io/github/license/SushiWaUmai/chronity?style=flat-square)](https://github.com/SushiWaUmai/Chronity/blob/main/LICENSE)
 [![Compatibility](https://img.shields.io/badge/-2020.3+-11191F?logo=Unity&style=flat-square)](https://unity3d.com/get-unity/download/archive)
-[![GitHub Repo stars](https://img.shields.io/github/stars/SushiWaUmai/Chronity?color=%23dca&label=%E2%AD%90&style=flat-square)](https://github.com/SushiWaUmai/Chronity/stargazers)
+[![GitHub Repo stars](https://img.shields.io/github/stars/SushiWaUmai/chronity?color=%23dca&label=%E2%AD%90&style=flat-square)](https://github.com/SushiWaUmai/Chronity/stargazers)
 
 :hourglass: A library for running functions after a delay in Unity.
 
 This package is a fork of the [UnityTimer](https://github.com/akbiggs/UnityTimer) made by [akbiggs](https://github.com/akbiggs).
 
-To get started, read the [docs](https://sushiwaumai.github.io/Chronity) or follow this [README](README.md) file.
+To get started, read the [docs](https://sushiwaumai.github.io/chronity) or follow this [README](README.md) file.
 
 ## Table of Contents
-- [Getting Started](https://github.com/SushiWaUmai/Chronity#getting-started-rocket)
-  - [Installation](https://github.com/SushiWaUmai/Chronity#installation)
-  - [Quick Start](https://github.com/SushiWaUmai/Chronity#quick-start-mortar_board)
-- [Features](https://github.com/SushiWaUmai/Chronity#features-sparkles)
-- [License](https://github.com/SushiWaUmai/Chronity#license-scroll)
+- [Getting Started](https://github.com/SushiWaUmai/chronity#getting-started-rocket)
+  - [Installation](https://github.com/SushiWaUmai/chronity#installation)
+  - [Quick Start](https://github.com/SushiWaUmai/chronity#quick-start-mortar_board)
+- [Features](https://github.com/SushiWaUmai/chronity#features-sparkles)
+- [License](https://github.com/SushiWaUmai/chronity#license-scroll)
 
 ## Getting Started :rocket:
 
@@ -26,7 +26,7 @@ Please follow the instructions in the manual about [Installing a package from a 
 
 
 Use the following URL to install the latest version of the package:
-https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity
+https://github.com/SushiWaUmai/chronity.git?path=/com.sushiwaumai.chronity
 
 
 ### Quick Start :mortar_board:

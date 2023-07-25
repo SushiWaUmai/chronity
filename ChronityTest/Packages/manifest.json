@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.sushiwaumai.chronity": "https://github.com/SushiWaUmai/Chronity.git?path=/com.sushiwaumai.chronity",
+    "com.sushiwaumai.chronity": "https://github.com/SushiWaUmai/chronity.git?path=/com.sushiwaumai.chronity",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.ugui": "1.0.0",
     "com.unity.modules.ai": "1.0.0",

@@ -3,8 +3,12 @@
     {
       "src": [
         {
-          "files": ["**/*.cs"],
+          "files": ["**/*.csproj"],
           "src": "../com.sushiwaumai.chronity"
+        },
+        {
+          "files": ["**/*.csproj"],
+          "src": "../ChronityTest"
         }
       ],
       "dest": "api",
